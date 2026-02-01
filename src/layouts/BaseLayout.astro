@@ -1,0 +1,40 @@
+---
+import TopNav from "../components/TopNav.astro";
+
+type Props = {
+  title: string;
+  description?: string;
+};
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>{title}</title>
+    {description ? <meta name="description" content={description} /> : null}
+  </head>
+  <body>
+    <TopNav />
+    <main class="container">
+      <slot />
+    </main>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">LEAGUE</div>
+        <div class="footer__meta">Public informational site. No sign-in, no records, no decisions.</div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  @import "../styles/global.css";
+</style>
+

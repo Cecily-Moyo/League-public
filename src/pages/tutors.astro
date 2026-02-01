@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="LEAGUE for Tutors" description="Public informational page for tutors.">
+  <section class="hero">
+    <div class="kicker">For tutors</div>
+    <h1 class="h1">A professional participation path, with clear expectations.</h1>
+    <p class="lede">
+      LEAGUE is a governed tutoring network. Participation requires application and approval. This page explains where to go next.
+    </p>
+    <div style="margin-top: 1.1rem; display: flex; gap: 0.6rem; flex-wrap: wrap;">
+      <a class="button button--primary" href="/tutor/apply">Apply to tutor</a>
+      <a class="button button--secondary" href="/auth/sign-in">Sign in</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid grid--2">
+      <div class="card">
+        <div class="card__title">What to expect</div>
+        <p class="card__desc">
+          A structured onboarding path and a professional workspace for authorised delivery. Access varies by role.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card__title">What this site won’t do</div>
+        <p class="card__desc">
+          This public site does not collect applications, verify identities, or provide access. It only routes you to the governed entry.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+

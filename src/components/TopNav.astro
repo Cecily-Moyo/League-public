@@ -1,0 +1,26 @@
+---
+const nav = [
+  { href: "/", label: "Home" },
+  { href: "/schools", label: "Schools" },
+  { href: "/tutors", label: "Tutors" },
+  { href: "/families", label: "Families" },
+];
+---
+
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="/" aria-label="LEAGUE public home">LEAGUE</a>
+    <nav class="nav__links" aria-label="Primary">
+      {nav.map((n) => (
+        <a class="nav__link" href={n.href}>
+          {n.label}
+        </a>
+      ))}
+    </nav>
+    <div class="nav__cta">
+      <a class="button button--secondary" href="/auth/sign-in">Sign in</a>
+      <a class="button button--primary" href="/tutor/apply">Apply to tutor</a>
+    </div>
+  </div>
+</header>
+

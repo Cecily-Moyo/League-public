@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="LEAGUE"
+  description="LEAGUE public overview. Informational only. Routes into the governed system."
+>
+  <section class="hero">
+    <div class="kicker">Public overview</div>
+    <h1 class="h1">LEAGUE is a system of record for learning delivery and oversight.</h1>
+    <p class="lede">
+      This site explains what LEAGUE is for, who it helps, and where to go next. It does not sign you in and it does not make decisions.
+    </p>
+    <div style="margin-top: 1.1rem; display: flex; gap: 0.6rem; flex-wrap: wrap;">
+      <a class="button button--primary" href="/auth/sign-in">Sign in to the governed system</a>
+      <a class="button button--secondary" href="/tutor/apply">Apply to participate as a tutor</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid grid--3">
+      <div class="card">
+        <div class="card__title">Schools</div>
+        <p class="card__desc">Clarity for institutions: delivery, oversight, and role separation.</p>
+        <div style="margin-top: 0.8rem;">
+          <a class="button button--secondary" href="/schools">Read for schools</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__title">Tutors</div>
+        <p class="card__desc">A professional participation path into a governed tutoring network.</p>
+        <div style="margin-top: 0.8rem;">
+          <a class="button button--secondary" href="/tutors">Read for tutors</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__title">Families</div>
+        <p class="card__desc">Plain-language explanation of what families can expect after sign-in.</p>
+        <div style="margin-top: 0.8rem;">
+          <a class="button button--secondary" href="/families">Read for families</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
